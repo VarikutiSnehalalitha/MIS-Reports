@@ -1,0 +1,34 @@
+{
+  "name": "daily-mis-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack Daily MIS Management System with permanent historical snapshots, point-in-time preservation, and talent pipeline management",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "seed": "node server/database/seed.js",
+    "client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "dev": "node server/server.js"
+  },
+  "keywords": [
+    "mis",
+    "daily-mis",
+    "recruitment",
+    "snapshots",
+    "history",
+    "analytics"
+  ],
+  "author": "Antigravity",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "uuid": "^13.0.0",
+    "xlsx": "^0.18.5"
+  }
+}
